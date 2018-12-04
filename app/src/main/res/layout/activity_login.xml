@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="4"
+    >
+
+    <!--
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="4"
+        >
+    -->
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="center"
+  >
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:background="@drawable/image"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="300dp"
+    android:layout_height="220dp"
+    android:orientation="vertical"
+    android:background="@drawable/badge_circle1"
+    android:focusableInTouchMode="true"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:id="@+id/relativeLayout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/badge_circle1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Username"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="42dp"
+            android:textSize="15.5dp"
+            android:textColor="#f8c55a"
+
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+
+            android:layout_gravity="center"
+            android:ems="10"
+            android:background="@drawable/badge_circle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:textColor="#000000"
+            android:textColorHint="#f8c55a"
+            android:id="@+id/editTextuser"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Password"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="42dp"
+            android:textSize="15.5dp"
+            android:textColor="#f8c55a"
+
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:background="@drawable/badge_circle"
+            android:id="@+id/editTextpass"
+            android:padding="6dp"
+            android:textColor="#000000"
+            android:textColorHint="#f8c55a"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editTextuser"/>
+    </LinearLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+    android:layout_marginTop="25dp">
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="Login"
+        android:id="@+id/button_submit"
+        android:gravity="center"
+        android:layout_below="@id/editTextpass"
+        android:onClick="btn_onClick"
+        android:background="#f8c55a"
+        android:layout_margin="8dp"
+
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true">
+
+    </Button>
+
+
+</LinearLayout>
+
+<requestFocus/>
+</LinearLayout>
+</ScrollView>

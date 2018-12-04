@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.webphotobooks" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+
+        android:theme="@style/ATheme" >
+        <activity
+            android:name="weddingpb.MainActivity"
+            android:theme="@style/ATheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="weddingpb.HomeActivity"
+            android:theme="@style/ATheme" >
+        </activity>
+        <activity android:name="weddingpb.LoginActivity"
+            android:theme="@style/ATheme">
+        </activity>
+        <activity
+            android:name="weddingpb.WelActivity"
+            android:theme="@style/ATheme">
+        </activity>
+        <activity android:name="weddingpb.ViewImageActivity"
+            android:theme="@style/ATheme">
+
+        </activity>
+        <activity android:name="weddingpb.Allbum_acttivity"
+            android:theme="@style/ATheme">
+        </activity>
+    </application>
+
+</manifest>

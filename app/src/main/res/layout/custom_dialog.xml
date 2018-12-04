@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0f7f8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Confirmation ?"
+        android:textColor="#f8c55a"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:id="@+id/txtView" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myimage"
+        android:src="@drawable/line_login_pager"
+        android:layout_margin="5dp"
+        android:layout_below="@id/txtView"/>
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textColor="#f8c55a"
+            android:textAlignment="center"
+                android:layout_margin="5dp"
+            android:id="@+id/textView"
+                android:layout_below="@+id/txtView"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="Yes"
+                    android:id="@+id/btn_ok"
+                    android:layout_marginLeft="35dp"
+                    android:textColor="#f8c55a"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/md_blue_800"
+                    android:layout_below="@+id/textView"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="No"
+                    android:id="@+id/btn_cancel"
+                    android:layout_below="@+id/textView"
+                    android:background="@color/md_blue_800"
+                    android:textColor="#f8c55a"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="60dp" />
+        </LinearLayout>
+
+
+</LinearLayout>

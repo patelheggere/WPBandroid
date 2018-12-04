@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <!--<item android:id="@+id/action_add_item" android:title="@string/action_add_item"
+        android:orderInCategory="100" app:showAsAction="always"
+        android:icon="@android:drawable/ic_input_add"/>
+    <item android:id="@+id/action_delete_item" android:title="@string/action_delete_item"
+        android:orderInCategory="100" app:showAsAction="always"
+        android:icon="@android:drawable/ic_delete"/>-->
+    <item android:id="@+id/action_vertical_list"
+        android:title="@string/action_vertical_list"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_horizontal_list"
+        android:title="@string/action_horizontal_list"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_grid_view"
+        android:title="@string/action_grid_view"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_vertical_grid_view_staggered"
+        android:title="@string/action_vertical_grid_view_staggered"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_horizontal_grid_view_staggered"
+        android:title="@string/action_horizontal_grid_view_staggered"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/sildeshow"
+        android:title="SlideShow"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>

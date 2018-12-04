@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000CC"
+    tools:context="weddingpb.WelActivity">
+    <include android:id="@+id/toolbar2"
+        layout="@layout/toolbar1"></include>
+    <GridView
+        android:layout_below="@+id/toolbar2"
+        android:id="@+id/gridView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:columnWidth="100dp"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:focusable="true"
+        android:clickable="true"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="data"
+        android:visibility="invisible"
+        android:id="@+id/textuser"
+        android:layout_alignBottom="@+id/gridView2"/>
+</RelativeLayout>

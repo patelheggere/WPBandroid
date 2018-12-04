@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ATheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowSoftInputMode">stateHidden</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+       <!-- <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+    <style name="PhotoGrid">
+        <item name="android:drawSelectorOnTop">true</item>
+        <!--<item name="android:listSelector">@drawable/arrow</item>-->
+    </style>
+    <style name="ThemeOverlay.YourApp" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">#f8c55a</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:showDividers">beginning</item>
+        <item name="android:divider">#000</item>
+    </style>
+
+
+    <style name="Widget.Sphinx.Button.Borderless" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+        <item name="android:textAppearance">@style/TextAppearance.Sphinx.DialogButton</item>
+    </style>
+    <style name="Theme_Sphinx_Dialog_Alert" parent="@android:style/Theme.Dialog">
+        <item name="android:borderlessButtonStyle">@style/Widget.Sphinx.Button.Borderless</item>
+        <item name="android:buttonBarStyle">@style/Sphinx.ButtonBar.AlertDialog</item>
+    </style>
+    <style name="TextAppearance.Sphinx.DialogButton" parent="@android:style/TextAppearance.Holo.Medium"></style>
+
+    <style name="Sphinx.ButtonBar.AlertDialog" parent="@android:style/Holo.ButtonBar.AlertDialog">
+        <item name="android:background">@android:color/holo_purple</item>
+    </style>
+
+    <style name="StyledDialog" parent="@android:style/Theme.Panel">
+        <item name="android:background">#43000b</item>
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:textColorPrimary">#f8c55a</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">#43000b</item>
+        <item name="android:bottomDark">#43000b</item>
+        <item name="android:bottomMedium">#43000b</item>
+        <item name="android:centerBright">#43000b</item>
+        <item name="android:centerDark">#43000b</item>
+        <item name="android:centerMedium">#43000b</item>
+        <item name="android:topBright">#43000b</item>
+        <item name="android:topDark">#43000b</item>
+    </style>
+
+
+    <!-- Animations for a non-full-screen window or activity. -->
+    <style name="MyAnimation.Window" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@animator/flip</item>
+        <item name="android:windowExitAnimation">@animator/flip</item>
+    </style>
+
+
+</resources>
